@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-redesign",
+  "version": "1.0.0",
+  "description": "Redesigned professional light-theme developer portfolio for Shagiththika Nanthakumar",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "author": "Shagiththika Nanthakumar",
+  "license": "ISC"
+}

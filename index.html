@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Shagiththika Nanthakumar | Software & Web Developer Portfolio</title>
+  <meta name="description" content="Personal portfolio of Shagiththika Nanthakumar, an Information Technology undergraduate at the University of Kelaniya. Focus on software development, web engineering, and cybersecurity.">
+  <meta name="keywords" content="Shagiththika Nanthakumar, University of Kelaniya, Information Technology, Software Developer, Web Developer, Cybersecurity, Portfolio, React, Java">
+  <meta name="author" content="Shagiththika Nanthakumar">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Shagiththika Nanthakumar | Portfolio">
+  <meta property="og:description" content="Information Technology undergraduate at the University of Kelaniya. Web & Software Developer.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Page Loader Animation -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <div class="loader-logo">Shagiththika /&gt;</div>
+    </div>
+  </div>
+
+  <!-- Fixed Header & Sticky Navigation -->
+  <header class="header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo" id="nav-logo">
+        <span class="logo-accent">&lt;</span>Shagiththika<span class="logo-accent"> /&gt;</span>
+      </a>
+      
+      <button class="mobile-nav-toggle" aria-label="Toggle menu" id="menu-toggle">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <nav class="nav-menu" id="nav-links">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    
+    <!-- Hero / Home Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-background-shapes">
+        <div class="shape-blob shape-blob-1"></div>
+        <div class="shape-blob shape-blob-2"></div>
+      </div>
+      
+      <div class="container hero-container">
+        
+        <!-- Left Hero Content -->
+        <div class="hero-content reveal reveal-left">
+          <div class="hero-status-badge">
+            <span class="status-dot"></span>
+            Open for Internships
+          </div>
+          
+          <span class="hero-name">Hi, I'm</span>
+          <h1 class="hero-title">
+            Shagiththika <span>Nanthakumar</span>
+          </h1>
+          
+          <p class="hero-description">
+            I am an Information Technology undergraduate at the University of Kelaniya with an interest in software and web development. I enjoy building practical applications, learning new technologies, and exploring cybersecurity.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              View Projects <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#resume" class="btn btn-secondary">
+              Download CV <i data-lucide="download"></i>
+            </a>
+          </div>
+
+          <div class="hero-socials" id="hero-socials-container">
+            <!-- Rendered Dynamically -->
+          </div>
+        </div>
+
+        <!-- Right Hero Visual (Profile Image composition) -->
+        <div class="hero-visual reveal reveal-right">
+          <div class="profile-card-composition">
+            <div class="profile-img-container">
+              <img src="assets/profile.png" alt="Shagiththika Nanthakumar" id="hero-profile-img">
+            </div>
+            
+            <!-- Floating Badge 1 -->
+            <div class="floating-badge floating-badge-1">
+              <div class="badge-icon-wrapper">
+                <i data-lucide="graduation-cap"></i>
+              </div>
+              <span>IT Undergraduate</span>
+            </div>
+
+            <!-- Floating Badge 2 -->
+            <div class="floating-badge floating-badge-2">
+              <div class="badge-icon-wrapper">
+                <i data-lucide="terminal"></i>
+              </div>
+              <span>React • Java • Python</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Endless Technical Keyword Marquee Ticker -->
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>WEB DEVELOPMENT <span class="marquee-dot"></span> SOFTWARE DEVELOPMENT <span class="marquee-dot"></span> CYBERSECURITY <span class="marquee-dot"></span> REACT <span class="marquee-dot"></span> NODE.JS <span class="marquee-dot"></span> JAVA <span class="marquee-dot"></span> PYTHON <span class="marquee-dot"></span> DATABASES <span class="marquee-dot"></span></span>
+          <span>WEB DEVELOPMENT <span class="marquee-dot"></span> SOFTWARE DEVELOPMENT <span class="marquee-dot"></span> CYBERSECURITY <span class="marquee-dot"></span> REACT <span class="marquee-dot"></span> NODE.JS <span class="marquee-dot"></span> JAVA <span class="marquee-dot"></span> PYTHON <span class="marquee-dot"></span> DATABASES <span class="marquee-dot"></span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag">Who I Am</span>
+          <h2 class="section-title">About <span>Me</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Text Info -->
+          <div class="about-intro-text reveal reveal-left">
+            <p class="about-lead">
+              I am an Information Technology undergraduate at the University of Kelaniya with an interest in software and web development. I enjoy building practical applications, learning new technologies, and understanding how systems can be designed to be secure and reliable.
+            </p>
+            <p class="about-body">
+              I am also developing my interest in cybersecurity and exploring different areas of modern IT. My goal is to continuously improve my technical skills, gain real-world industry experience, and contribute to meaningful technology projects.
+            </p>
+            
+            <!-- Compact Academic Information Card -->
+            <div class="about-academic-card">
+              <div class="academic-icon-wrapper">
+                <i data-lucide="graduation-cap"></i>
+              </div>
+              <div class="academic-info">
+                <span class="academic-period">2025 – 2029</span>
+                <h3 class="academic-degree">BSc (Hons) in Information Technology</h3>
+                <span class="academic-school">University of Kelaniya • Faculty of Science</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Feature Cards -->
+          <div class="about-features-container reveal reveal-right" id="about-features-container">
+            <!-- Feature Cards Rendered Dynamically -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding" style="background-color: var(--bg-card);">
+      <div class="container">
+        
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag">My Toolkit</span>
+          <h2 class="section-title">Technical <span>Skills</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="skills-grid" id="skills-container">
+          <!-- Rendered Dynamically -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+      <div class="container">
+        
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag">Recent Work</span>
+          <h2 class="section-title">Featured <span>Projects</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+          <!-- Rendered Dynamically -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section-padding" style="background-color: var(--bg-card);">
+      <div class="container">
+        
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag">My Qualifications</span>
+          <h2 class="section-title">Education <span>Path</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+          <div id="education-container">
+            <!-- Rendered Dynamically -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience / Professional Development Section -->
+    <section id="experience" class="section-padding">
+      <div class="container">
+        
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag">Career Path</span>
+          <h2 class="section-title">Experience &amp; <span>Focus</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="experience-layout reveal reveal-up">
+          <div class="experience-pulse-card">
+            <div class="status-badge-container">
+              <span class="status-pulse-dot"></span>
+              Seeking Internship Opportunities
+            </div>
+            
+            <h3 class="pulse-card-title">Undergraduate &amp; Aspiring Developer</h3>
+            <p class="pulse-card-desc">
+              I am currently pursuing my academic modules while refining my technical skillset in modern software development and web applications. I am actively looking for undergraduate internship roles where I can collaborate with professional engineering teams and contribute to secure, functional software.
+            </p>
+            
+            <div class="checklist-grid" id="experience-checklist">
+              <!-- Rendered Dynamically -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section-padding" style="background-color: var(--bg-card);">
+      <div class="container">
+        
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag">Continuing Education</span>
+          <h2 class="section-title">Certifications <span>Gallery</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="certifications-grid" id="certifications-container">
+          <!-- Rendered Dynamically -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section-padding">
+      <div class="container">
+        
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag">Qualifications File</span>
+          <h2 class="section-title">My <span>Resume</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="resume-layout reveal reveal-up">
+          <div class="resume-download-card">
+            <div class="resume-icon-wrapper">
+              <i data-lucide="file-text"></i>
+            </div>
+            
+            <div class="resume-details">
+              <h3 class="resume-heading">Curriculum Vitae</h3>
+              <p class="resume-desc">
+                Access a detailed summary of my academic history, university achievements, practical system engineering projects, and technological foundations.
+              </p>
+              
+              <div class="resume-actions-group">
+                <a href="assets/cv.pdf" download="Shagiththika_Nanthakumar_CV.pdf" class="btn btn-primary" id="cv-download-btn">
+                  Download CV <i data-lucide="download"></i>
+                </a>
+                <a href="assets/cv.pdf" target="_blank" class="btn btn-secondary" id="cv-view-btn">
+                  View CV <i data-lucide="external-link"></i>
+                </a>
+                <span class="resume-format-tag"><i data-lucide="info"></i> PDF Format</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding" style="background-color: var(--bg-card);">
+      <div class="container">
+        
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's <span>Connect</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left side details cards -->
+          <div class="contact-info-column reveal reveal-left">
+            <h3 class="contact-lead">Let's connect and build something secure together.</h3>
+            <p class="contact-text-desc">
+              I am always open to discussing new software development projects, internship possibilities, tech inquiries, or cybersecurity topics.
+            </p>
+            
+            <div class="contact-links-list" id="contact-details-container">
+              <!-- Rendered Dynamically -->
+            </div>
+          </div>
+
+          <!-- Right side feedback form -->
+          <div class="contact-form-card reveal reveal-right">
+            <!-- Form Submission feedback banner -->
+            <div class="form-status-banner" id="form-status">
+              <i data-lucide="check-circle-2" class="status-icon-success" style="display: none;"></i>
+              <i data-lucide="alert-circle" class="status-icon-error" style="display: none;"></i>
+              <span id="form-status-text">Status message text</span>
+            </div>
+
+            <form id="contact-form" novalidate>
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Full Name</label>
+                  <input type="text" id="form-name" class="form-input" placeholder="Your name" required>
+                  <span class="form-error-msg" id="error-name" style="display: none;">Name is required</span>
+                </div>
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Email Address</label>
+                  <input type="email" id="form-email" class="form-input" placeholder="you@example.com" required>
+                  <span class="form-error-msg" id="error-email" style="display: none;">Please enter a valid email</span>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject</label>
+                <input type="text" id="form-subject" class="form-input" placeholder="How can I help you?" required>
+                <span class="form-error-msg" id="error-subject" style="display: none;">Subject is required</span>
+              </div>
+              
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message</label>
+                <textarea id="form-message" class="form-input" placeholder="Write your message here..." required></textarea>
+                <span class="form-error-msg" id="error-message" style="display: none;">Message is required</span>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-submit" id="form-submit-btn">
+                Send Message <i data-lucide="send"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox Modal for Certificate Preview -->
+  <div class="modal-overlay" id="cert-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close dialog">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="modal-body-content">
+        <h3 id="modal-title" class="modal-header-title">Certificate Title</h3>
+        <h4 id="modal-subtitle" class="modal-header-subtitle">Issuer - Year</h4>
+        
+        <div class="modal-image-container">
+          <img src="" id="modal-img" alt="Enlarged Certificate Preview">
+        </div>
+        
+        <div class="modal-footer-actions">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-linkedin-btn">
+            View on LinkedIn <i data-lucide="external-link"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back-to-Top Button -->
+  <button class="back-to-top" id="back-to-top-btn" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="footer-bottom">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">&lt;Shagiththika /&gt;</span>
+          <p class="footer-tagline">Undergraduate student at Kelaniya. Building functional, secure applications.</p>
+        </div>
+        
+        <nav class="footer-nav">
+          <a href="#hero" class="footer-nav-link">Home</a>
+          <a href="#about" class="footer-nav-link">About</a>
+          <a href="#skills" class="footer-nav-link">Skills</a>
+          <a href="#projects" class="footer-nav-link">Projects</a>
+          <a href="#education" class="footer-nav-link">Education</a>
+          <a href="#experience" class="footer-nav-link">Experience</a>
+          <a href="#certifications" class="footer-nav-link">Certifications</a>
+          <a href="#resume" class="footer-nav-link">Resume</a>
+          <a href="#contact" class="footer-nav-link">Contact</a>
+        </nav>
+        
+        <div class="footer-socials" id="footer-socials-container">
+          <!-- Rendered Dynamically -->
+        </div>
+      </div>
+      
+      <div class="footer-copyright-bar">
+        <p>&copy; 2026 Shagiththika Nanthakumar. All rights reserved.</p>
+        <span class="footer-note">Designed for modern professional presentation.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
